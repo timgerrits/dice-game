@@ -32,7 +32,9 @@ contract RiggedRoll is Ownable {
 
         if (roll <= 2) {
             diceGame.rollTheDice{value: 0.002 ether}();
-        }
+        } else {diceGame.rollTheDice{value: 0.00 ether}();}
+        
+
     }
 
     //Add receive() function so contract can receive Eth
